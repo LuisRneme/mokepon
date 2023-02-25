@@ -1,0 +1,14 @@
+<html>Aqui va guardar todo el sitio web
+
+<head>va el codigo, no se ve en el sitio web
+<title> Mi primera pagina </title>
+
+</head>
+
+<body> va el titulo, la descripcion, lo que queremos que se vea
+
+
+
+</body> 
+
+</html>

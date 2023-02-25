@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Juego Mokepon</title>
+        <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./style.css">
+           
+
+    </head>
+
+    <body>
+        <section id="seleccion-mascota">
+            <h1 class="titulo"> MOKEPON!!!🔥💧🌱</h1>
+
+            <h2 class="subtitulo">Elige tu mascota</h2>
+            
+        <div class="tarjeta">
+            <!--Debo Encapsular ls input type="radio" para que solo pueda seleccionar uno
+                    a traves del name(nombre del grupo al que pertenece el radio)-->
+            <input type="radio" name="mascota" id="hipodoge" />
+            <label class="selector-mokepon" for="hipodoge">
+                <p>Hipodoge</p>
+                <img src="./assets/mokepons_mokepon_hipodoge_attack.png" alt="Hipodoge">
+            </label>
+            
+            <!--El for(ayuda a vincular un label con un input por lo que el for del label y el id del input
+                        deben tener el mismo nombre)-->
+            <input type="radio" name="mascota" id="capipepo" />
+            <label class="selector-mokepon" for="capipepo">
+                <p>Capipepo</p>
+                <img src="./assets/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+            </label>
+
+            <input type="radio" name="mascota" id="ratigueya" />
+            <label class="selector-mokepon" for="ratigueya">
+                <p>Ratigueya</p>
+                <img src="./assets/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+            </label>       
+        </div>
+
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+<!--Esta es la segunda parte de css-->
+
+        <section id="seleccion-ataque">
+            <h1 class="titulo"> MOKEPON!!!🔥💧🌱</h1>
+
+            <h2 class="subtitulo">Elige tu Ataque</h2>
+            <div class="tarjetas-ataques">
+                <button id="boton-fuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="boton-agua" class="boton-de-ataque">Agua 💧</button>
+                <button id="boton-tierra" class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+
+            <!--Por cada bloque debemos tener un padre-->
+            <div id="mensaje">
+                <div id="resultados">MUCHA SUERTE</div>
+                
+                <section id="reiniciar-juego">
+                    <button id="reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            <!--padre con dos hijos-->
+            <div class="ataque">
+                <div class="ataque-jugador">
+                    <p id="vida-jugador">3</p>
+                    <p id="mascota-jugador"></p>                     
+                    <div id="ataque-del-jugador"></div>                   
+                </div>
+
+                <div class="ataque-enemigo">
+                    <p id="vida-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>                                           
+                    <div id="ataque-del-enemigo"></div>                    
+                </div>                                
+            </div>
+        </section>
+           <!--Consiste en colocar el script al final una solucion para que no de error
+            <script src="./js/mokepon.js"></script>-->
+    </body>
+</html>
